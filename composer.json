@@ -1,0 +1,60 @@
+{
+    "name": "codezero/laravel-uri-translator",
+    "description": "Translate a URI or individual slugs, excluding route parameters.",
+    "keywords": [
+        "php",
+        "laravel",
+        "locale",
+        "language",
+        "country",
+        "localization",
+        "url",
+        "uri",
+        "slugs"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Vermeyen",
+            "email": "ivan@codezero.be"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeZero\\UriTranslator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeZero\\UriTranslator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeZero\\UriTranslator\\UriTranslatorServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
