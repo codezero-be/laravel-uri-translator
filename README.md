@@ -10,10 +10,9 @@
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R3UQ8V)
 
-Translate a URI or individual slugs.
-
 This package registers a macro for the Laravel `Translator` class.
 This will allow you to translate individual URI slugs, while ignoring parameter placeholders.
+
 Parameters will not be translated by this macro. That remains the responsibility of your code.
 
 ## ✅ Requirements
@@ -31,7 +30,8 @@ composer require codezero/laravel-uri-translator
 
 Laravel will automatically register the ServiceProvider.
 
-Then in your app's `lang` folder, create subdirectories for every locale you want to have translations for.
+In your app's `lang` folder, create subdirectories for every locale you want to have translations for.
+
 Next create a `routes.php` file in each of those directories.
 
 ```
@@ -42,7 +42,7 @@ lang/
        └── routes.php
 ```
 
-Return an array of translations from the `routes.php` file.
+Return an array of translations from the `routes.php` files.
 
 ### 🚀 Usage
 
@@ -61,7 +61,7 @@ The URI macro accepts 2 additional parameters:
 Lang::uri('hello/world', 'fr', 'my-package');
 ```
 
-You can also use `trans()->uri('hello/world')` instead of `Lang::uri()`.
+You can also use `trans()->uri('hello/world')` instead of `Lang::uri('hello/world')`.
 
 ### 🔌 Example
 
