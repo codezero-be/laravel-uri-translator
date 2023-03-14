@@ -2,6 +2,7 @@
 
 namespace CodeZero\UriTranslator;
 
+use CodeZero\UriTranslator\Macros\Lang\UriMacro;
 use Illuminate\Support\ServiceProvider;
 
 class UriTranslatorServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class UriTranslatorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        UriMacro::register();
     }
 
     /**

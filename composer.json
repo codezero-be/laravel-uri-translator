@@ -1,6 +1,6 @@
 {
     "name": "codezero/laravel-uri-translator",
-    "description": "Translate a URI or individual slugs, excluding route parameters.",
+    "description": "Translate a URI or individual slugs.",
     "keywords": [
         "php",
         "laravel",
